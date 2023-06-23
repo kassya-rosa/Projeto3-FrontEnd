@@ -1,0 +1,23 @@
+.font-size-25 {
+     font-size: 25px !important;
+}
+
+.font-size-medio {
+     font-size: 14px !important;
+}
+
+.font-size-pequeno {
+     font-size: 12px !important;
+}
+
+.text-cinza-escuro {
+     color: #696969;
+}
+
+.bg-cinza {
+     background-color: #eeeded;
+}
+
+.bg-cinza-escuro {
+     background-color: #dadada;
+}

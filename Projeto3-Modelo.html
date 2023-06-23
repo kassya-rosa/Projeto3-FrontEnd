@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Projeto 3 - Modelo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js" integrity="sha512-oaUGh3C8smdaT0kMeyQ7xS1UY60lko23ZRSnRljkh2cbB7GJHZjqe3novnhSNc+Qj21dwBE5dFBqhcUrFc9xIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="w-100 p-3 bg-dark-subtle border-bottom">
+          <div class="row">
+               <div class="col-3">
+                    <h3 class="text-dark-emphasis">Meu Painel</h3>
+               </div>
+               <div class="col-6">
+                    <input type="search" class="form-control bg-light text-dark-emphasis border rounded-3 w-50 py-1 px-3 text-danger-emphasis fw-bolder shadow" id="campoBuscar" placeholder="Buscar" name="campoBuscar">
+               </div>
+               <div class="col-3 d-flex justify-content-end">
+                    <div class="dropdown">
+                         <button type="button" class="btn btn-light fw-bold shadow text-light-emphasis dropdown-toggle" data-bs-toggle="dropdown">Olá, Kassya</button>
+                         <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Configurações</a></li>
+                              <li><a class="dropdown-item" href="#">Mensagens</a></li>
+                              <li><a class="dropdown-item" href="#">Sair</a></li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+     </header>
+     <section>
+          <div class="row vh-100 w-100">
+               <aside class="col-3 p-4 bg-dark-subtle">
+                    <ul class="navbar-nav">
+                         <li class="nav-item d-flex align-items-center column-gap-2">
+                              <i class="bi bi-house-door text-white"></i>
+                              <a class="nav-link text-white fw-medium" href="#">Painel</a>
+                         </li>
+                         <li class="nav-item d-flex align-items-center column-gap-2">
+                              <i class="bi bi-file-earmark text-dark"></i>
+                              <a class="nav-link text-dark fw-medium" href="#">Ordens</a>
+                         </li>
+                         <li class="nav-item d-flex align-items-center column-gap-2">
+                              <i class="bi bi-cart text-dark"></i>
+                              <a class="nav-link text-dark fw-medium" href="#">Produtos</a>
+                         </li>
+                         <li class="nav-item d-flex align-items-center column-gap-2">
+                              <i class="bi bi-people text-dark"></i>
+                              <a class="nav-link text-dark fw-medium" href="#">Clientes</a>
+                         </li>
+                         <li class="nav-item d-flex align-items-center column-gap-2">
+                              <i class="bi bi-bar-chart-steps text-dark"></i>
+                              <a class="nav-link text-dark fw-medium" href="#">Relatórios</a>
+                         </li>
+                    </ul>
+               </aside>
+               <main class="col-9 p-4">
+                    <div class="row p-2">
+                         <div class="col-12 bg-cinza p-2 rounded-3">
+                              <span class="text-primary text-decoration-underline">Início</span>
+                              <span class="text-cinza-escuro">/ Painel</span>
+                         </div>
+                    </div>
+                    <div class="row mt-2">
+                         <div class="col-12">
+                              <h2>Painel</h2>
+                              <p>Essa é a página inicial de um painel administrativo</p>
+                         </div>
+                    </div>
+                    <div class="row mt-2">
+                         <div class="col-3">
+                              <div class="card">
+                                   <div class="card-header fw-bold font-size-25">Clientes</div>
+                                   <div class="card-body">
+                                        <h4 class="fw-bold font-size-25">345 mil</h4>
+                                        <p class="font-size-medio">Abril/2023 - Junho2023, Brasília-DF</p>
+                                        <h6 class="font-size-pequeno text-success">18,2% de aumento no período</h6>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="card">
+                                   <div class="card-header fw-bold font-size-25">Receita</div>
+                                   <div class="card-body">
+                                        <h4 class="fw-bold font-size-25">R$ 2,4 milhões</h4>
+                                        <p class="font-size-medio">Abril/2023 - Junho2023, Brasília-DF</p>
+                                        <h6 class="font-size-pequeno text-success">4,6% de aumento no período</h6>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="card">
+                                   <div class="card-header fw-bold font-size-25">Compras</div>
+                                   <div class="card-body">
+                                        <h4 class="fw-bold font-size-25">42 unidades</h4>
+                                        <p class="font-size-medio">Abril/2023 - Junho2023, Brasília-DF</p>
+                                        <h6 class="font-size-pequeno text-danger">2,6% de decréscimo no período</h6>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="card">
+                                   <div class="card-header fw-bold font-size-25">Tráfego</div>
+                                   <div class="card-body">
+                                        <h4 class="fw-bold font-size-25">64 mil</h4>
+                                        <p class="font-size-medio">Abril/2023 - Junho2023, Brasília-DF</p>
+                                        <h6 class="font-size-pequeno text-success">2,5% de aumento no período</h6>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row mt-4">
+                         <div class="col-6">
+                              <div class="card">
+                                   <div class="card-header fw-bold font-size-25">Tráfego últimos 6 meses</div>
+                                   <div class="card-body">
+                                        <canvas id="myChart" width="400" height="240"></canvas>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-6">
+                              <div class="card">
+                                   <div class="card-header fw-bold font-size-25">Últimas transações</div>
+                                   <div class="card-body">
+                                        <table class="table">
+                                             <thead class="border-bottom border-black">
+                                                  <tr>
+                                                       <th scope="col">Ordem</th>
+                                                       <th scope="col">Produto</th>
+                                                       <th scope="col">Cliente</th>
+                                                       <th scope="col">Total</th>
+                                                       <th scope="col">Data</th>
+                                                       <th scope="col"></th>
+                                                  </tr>
+                                             </thead>
+                                             <tbody>
+                                                  <tr>
+                                                       <th class="font-size-medio align-middle" scope="row">17371705</th>
+                                                       <td class="font-size-medio align-middle">Produto 1</td>
+                                                       <td class="font-size-medio align-middle">maria@email.com</td>
+                                                       <td class="font-size-medio align-middle">R$ 61,11</td>
+                                                       <td class="font-size-medio align-middle">20/06/2023</td>
+                                                       <td><button class="btn btn-primary bg-primary text-white">Detalhar</button></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="font-size-medio align-middle" scope="row">17370540</th>
+                                                       <td class="font-size-medio align-middle">Produto 2</td>
+                                                       <td class="font-size-medio align-middle">jose@email.com</td>
+                                                       <td class="font-size-medio align-middle">R$ 53,11</td>
+                                                       <td class="font-size-medio align-middle">20/06/2023</td>
+                                                       <td><button class="btn btn-primary bg-primary text-white">Detalhar</button></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="font-size-medio align-middle" scope="row">17371705</th>
+                                                       <td class="font-size-medio align-middle">Produto 1</td>
+                                                       <td class="font-size-medio align-middle">maria@email.com</td>
+                                                       <td class="font-size-medio align-middle">R$ 61,11</td>
+                                                       <td class="font-size-medio align-middle">20/06/2023</td>
+                                                       <td><button class="btn btn-primary bg-primary text-white">Detalhar</button></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="font-size-medio align-middle" scope="row">17370540</th>
+                                                       <td class="font-size-medio align-middle">Produto 2</td>
+                                                       <td class="font-size-medio align-middle">jose@email.com</td>
+                                                       <td class="font-size-medio align-middle">R$ 53,11</td>
+                                                       <td class="font-size-medio align-middle">20/06/2023</td>
+                                                       <td><button class="btn btn-primary bg-primary text-white">Detalhar</button></td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </div>
+                                   <div class="card-footer text-center bg-white border-0">
+                                        <button class=" btn btn-secondary w-100 fw-bold">Todas as transações</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row mt-4">
+                         <div class="col-7 text-cinza-escuro">@ 2023</div>
+                         <div class="col-2 text-cinza-escuro">Política de privacidade</div>
+                         <div class="col-2 text-cinza-escuro">Termos de uso </div>
+                         <div class="col-1 text-cinza-escuro">Contato </div>
+                    </div>
+               </main>
+          </div>
+     </section>
+     <script>
+          const xValues = ["Janeiro/2023", "Fevereiro/2023", "Março/2023", "Abril/2023", "Maio/2023", "Junho/2023", ""];
+          const yValues = [22000,25000,20000,34000,56000,64000];
+
+          var ctx = document.getElementById('myChart').getContext('2d');
+
+            var gradient = ctx.createLinearGradient(0, 0, 0, 300);
+            gradient.addColorStop(0, 'rgba(252, 20, 37, 0.3)');
+
+          new Chart("myChart", {
+               type: "line",
+               data: {
+               labels: xValues,
+               datasets: [{
+                    lineTension: 0.3,
+                    backgroundColor: "#CD1818",
+                    borderColor: "#B31312",
+                    fill: true,
+                    backgroundColor: gradient,
+                    data: yValues
+               }]
+               },
+               options: {
+               legend: {display: false},
+               scales: {
+               y: {beginAtZero: true, steps: 20, max:65000},
+               
+                }
+          }
+          });
+     </script>
+</body>
+</html>
